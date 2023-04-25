@@ -1,5 +1,4 @@
 #blocking the folders access without index page
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteEngine  on
+RewriteRule ^(.*)$ $1.html
