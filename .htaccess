@@ -1,4 +1,6 @@
-#blocking the folders access without index page
+  RewriteEngine On  
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+  RewriteRule ^ - [L]
 
-RewriteEngine  on
-RewriteRule ^(.*)$ $1.html
+  RewriteRule ^ /index.html [L]
