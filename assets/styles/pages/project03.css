@@ -172,3 +172,14 @@
     border-radius: 10px;
     padding: 16%;
 }
+@media(max-width: 900px){
+.project03-slide2d {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}}
+
+.project03-slide2d img{
+    border-radius: 10px;
+    padding: 16%;
+}
